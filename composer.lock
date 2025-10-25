@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c514d8f7b9fc5970bdd94287905ef584",
+    "content-hash": "e9014508ca1fcd575f724b68a159e35b",
     "packages": [
         {
             "name": "brick/math",
@@ -3275,6 +3275,110 @@
                 "source": "https://github.com/ramsey/uuid/tree/4.9.1"
             },
             "time": "2025-09-04T20:59:21+00:00"
+        },
+        {
+            "name": "rcv/core",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RCV-Technologies/laravel-module.git",
+                "reference": "fd7d75788e1926f47d306674131a262240c9daed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RCV-Technologies/laravel-module/zipball/fd7d75788e1926f47d306674131a262240c9daed",
+                "reference": "fd7d75788e1926f47d306674131a262240c9daed",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^9.0|^10.0|^11.0|^12.0",
+                "illuminate/contracts": "^9.0|^10.0|^11.0|^12.0",
+                "illuminate/database": "^9.0|^10.0|^11.0|^12.0",
+                "illuminate/filesystem": "^9.0|^10.0|^11.0|^12.0",
+                "illuminate/support": "^9.0|^10.0|^11.0|^12.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "mockery/mockery": "^1.4",
+                "orchestra/testbench": "^7.0|^8.0|^9.0",
+                "phpstan/phpstan": "^1.0",
+                "phpunit/phpunit": "^9.0|^10.0|^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Rpc": "RCV\\Core\\Facades\\Rpc",
+                        "Abac": "RCV\\Core\\Facades\\Abac",
+                        "Rbac": "RCV\\Core\\Facades\\Rbac",
+                        "Module": "RCV\\Core\\Facades\\Module",
+                        "Security": "RCV\\Core\\Facades\\Security",
+                        "MessageBus": "RCV\\Core\\Facades\\MessageBus",
+                        "ModuleMetrics": "RCV\\Core\\Facades\\ModuleMetrics"
+                    },
+                    "providers": [
+                        "RCV\\Core\\Providers\\CoreServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "RCV\\Core\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "RCV Technologies",
+                    "email": "support@rcvtechnologies.com",
+                    "homepage": "https://rcvtechnologies.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Enterprise-Grade Modular Architecture for Laravel Applications - A powerful Laravel package that revolutionizes application development with robust Service Repository Pattern, Dynamic Module Management, and 50+ Artisan commands for scalable, maintainable applications.",
+            "homepage": "https://const-ant-laravel-corex-docs.vercel.app/",
+            "keywords": [
+                "architecture",
+                "artisan",
+                "commands",
+                "development",
+                "dynamic-loading",
+                "enterprise",
+                "framework",
+                "laravel",
+                "modular",
+                "modules",
+                "package",
+                "scalable",
+                "service-repository"
+            ],
+            "support": {
+                "docs": "https://const-ant-laravel-corex-docs.vercel.app/",
+                "email": "support@rcvtechnologies.com",
+                "issues": "https://github.com/RCV-Technologies/laravel-module/issues",
+                "source": "https://github.com/RCV-Technologies/laravel-module"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/rcv-technologies",
+                    "type": "github"
+                },
+                {
+                    "url": "https://rcvtechnologies.com/donate",
+                    "type": "other"
+                }
+            ],
+            "time": "2025-09-23T14:19:34+00:00"
         },
         {
             "name": "symfony/clock",
