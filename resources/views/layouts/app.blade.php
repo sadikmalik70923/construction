@@ -18,7 +18,11 @@
     <style>
       /* Header styles */
       .nav-base { transition: background-color .35s ease, backdrop-filter .35s ease, box-shadow .35s ease; }
-      .nav-solid { background: rgba(15,23,42,.92); backdrop-filter: saturate(130%) blur(6px); box-shadow: 0 4px 16px rgba(0,0,0,.18); }
+.nav-solid { 
+  background: rgba(23, 61, 165, 0.92); 
+  backdrop-filter: saturate(130%) blur(6px); 
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18); 
+}
       .navbar .nav-link, .navbar .navbar-brand { color: #f8fafc !important; }
       .navbar .nav-link:hover { color: #ffffff !important; }
       .navbar .btn-outline-light { color: #e5e7eb; border-color: #e5e7eb; }
@@ -47,33 +51,24 @@
 
             {{-- Desktop layout --}}
             <div class="d-none d-lg-flex w-100 align-items-center justify-content-between">
-                <ul class="navbar-nav flex-row gap-3">
-                    <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/services">Our Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/projects">Our Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/sustainability">Sustainability</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/news">News & Insights</a></li>
-                </ul>
+                <ul class="navbar-nav d-none d-lg-flex flex-row gap-3">
+            <li class="nav-item"><a class="nav-link text-white" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="/about">About Us</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="/services">Services</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="/team">Our Team</a></li>
+        </ul>
 
-                <a class="navbar-brand position-absolute start-50 translate-middle-x fw-bold text-white text-center" href="/" style="white-space:nowrap; font-size:clamp(.85rem,1.2vw,1.1rem);">GLOBECON CONSTRUCTION LLC</a>
+        <a class="navbar-brand position-absolute start-50 translate-middle-x fw-bold text-white text-center"
+           href="/" style="white-space:nowrap; font-size:clamp(1rem,1.5vw,1.3rem); letter-spacing:1px;">
+            GLOBECON CONSTRUCTION LLC
+        </a>
 
-                <ul class="navbar-nav flex-row gap-3 align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="/contact">Contact us</a></li>
-                    <li class="nav-item"><a class="btn btn-outline-light rounded-pill px-3 py-1" href="/contact">ENQUIRE NOW</a></li>
-                </ul>
-            </div>
-
-            {{-- Mobile layout --}}
-            <div class="collapse navbar-collapse d-lg-none mt-2" id="mainNavbar">
-                <ul class="navbar-nav text-center w-100">
-                    <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/services">Our Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/projects">Our Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/sustainability">Sustainability</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/news">News & Insights</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contact">Contact us</a></li>
-                    <li class="nav-item"><a class="btn btn-outline-light rounded-pill mt-2" href="/contact">ENQUIRE NOW</a></li>
-                </ul>
+        <ul class="navbar-nav d-none d-lg-flex flex-row gap-3 align-items-center ms-auto">
+            <li class="nav-item"><a class="nav-link text-white" href="/projects">Our Projects</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="/careers">Careers</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="/news">News</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="/contact">Contact</a></li>
+        </ul>
             </div>
         </div>
     </nav>
