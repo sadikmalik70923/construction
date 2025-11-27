@@ -18,25 +18,7 @@
     <div class="flex flex-wrap justify-center gap-4">
       <button class="filter-btn bg-blue-600 text-white px-5 py-2 rounded-full font-medium hover:bg-blue-700 transition" data-category="all">All</button>
       <button class="filter-btn bg-white text-gray-700 border border-gray-300 px-5 py-2 rounded-full font-medium hover:bg-blue-100" data-category="residential">Residential</button>
-      <button class="filter-btn bg-white text-gray-700 border border-gray-300 px-5 py-2 rounded-full font-medium hover:bg-blue-100" data-category="commercial">Commercial</button>
-      <button class="filter-btn bg-white text-gray-700 border border-gray-300 px-5 py-2 rounded-full font-medium hover:bg-blue-100" data-category="infrastructure">Infrastructure</button>
-    </div>
-  </div>
-
-  <!-- 🏗️ Project Grid -->
-  <div class="container mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10" id="projects-grid">
-    
-    <!-- Project 1 -->
-    <div class="project-card" data-category="residential">
-      <div class="relative group overflow-hidden rounded-2xl shadow-lg bg-white">
-        <img src="/images/projects/project1.jpg" alt="Luxury Apartment Complex" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
-        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-          <a href="#" class="text-white font-semibold text-lg">View Details</a>
         </div>
-      </div>
-      <div class="p-5">
-        <h3 class="text-xl font-bold mb-2 text-gray-800">Luxury Apartment Complex</h3>
-        <p class="text-gray-600">Modern high-rise apartments designed for comfort and sustainability.</p>
       </div>
     </div>
 
